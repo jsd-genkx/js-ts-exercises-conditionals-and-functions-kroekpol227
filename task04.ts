@@ -6,4 +6,9 @@
 
 // TODO BONUS: Rewrite with if
 
-const num = 15;
+const num = 7;
+
+if(num % 3 === 0 && num % 5 === 0){console.log("Fizzbuzz");}
+else if(num % 3 === 0){console.log("FIZZ");}
+else if(num % 5 === 0){console.log("Buzz");}
+else {console.log("Not divisible by 3 or 5");}
