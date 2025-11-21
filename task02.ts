@@ -3,5 +3,8 @@
 
 const userInput = 42;
 // Try changing to "hello", 10, null, NaN
-if (typeof userInput==='number'){console.log("เป็นตัวเลข");}
-else{console.log("ไม่เป็นตัวเลข");}
+if (typeof userInput === "number") {
+  console.log("เป็นตัวเลข");
+} else {
+  console.log("ไม่เป็นตัวเลข");
+}

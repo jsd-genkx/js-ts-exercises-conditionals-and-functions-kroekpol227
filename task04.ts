@@ -6,9 +6,37 @@
 
 // TODO BONUS: Rewrite with if
 
-const num = 7;
+// const number = 7;
 
-if(num % 3 === 0 && num % 5 === 0){console.log("Fizzbuzz");}
-else if(num % 3 === 0) {console.log("FIZZ");}
-else if(num % 5 === 0) {console.log("Buzz");}
-else {console.log("Not divisible by 3 or 5");}
+// if (number % 3 === 0 && number % 5 === 0) {
+//   console.log("Fizzbuzz");
+// } else if (number % 3 === 0) {
+//   console.log("FIZZ");
+// } else if (number % 5 === 0) {
+//   console.log("Buzz");
+// } else {
+//   console.log("Not divisible by 3 or 5");
+// }
+
+const FizzBuzz = (number: number) => {
+  if (number % 3 === 0 && number % 5 === 0) {
+    console.log("Fizzbuzz");
+  } else if (number % 3 === 0) {
+    console.log("FIZZ");
+  } else if (number % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log("Not divisible by 3 or 5");
+  }
+};
+
+FizzBuzz(5)
+
+const FizzBuzz2=FizzBuzz
+FizzBuzz2(15)
+
+// Example Test Cases
+FizzBuzz(15); // "FizzBuzz"
+FizzBuzz(9); // "Fizz"
+FizzBuzz(10); // "Buzz"
+FizzBuzz(7); // "Not divisible by 3 or 5"
